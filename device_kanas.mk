@@ -181,12 +181,7 @@ WIFI_CONFIGS := \
 
 PRODUCT_COPY_FILES += \
 	$(foreach f,$(WIFI_CONFIGS),$(f):system/etc/wifi/$(notdir $(f)))
-
-# Radio
-PRODUCT_PACKAGES += \
-	FMRadio \
-	radio.fm.default \
-
+	
 # Memtrack
 PRODUCT_PACKAGES += \
 	memtrack.sc8830 \
