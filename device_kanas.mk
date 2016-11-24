@@ -105,6 +105,7 @@ PRODUCT_COPY_FILES += \
 # HWC
 PRODUCT_PACKAGES += \
 	sprd_gsp.sc8830 \
+	hwcomposer.sc8830 \
 	libion_sprd \
 	libdither \
 
