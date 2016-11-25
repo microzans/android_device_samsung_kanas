@@ -1,4 +1,4 @@
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -107,6 +107,7 @@ CHARGING_ENABLED_PATH := /sys/class/power_supply/battery/batt_lp_charging
 BACKLIGHT_PATH := /sys/class/backlight/panel/brightness
 
 TARGET_POWERHAL_VARIANT := samsung
+
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=ttyS1,115200n8
@@ -123,15 +124,17 @@ TARGET_NEEDS_PROP_INIT_HACK := true
 TARGET_OTA_ASSERT_DEVICE := kanas,kanas3g,kanas3gxx,kanas3gub,kanas3gnfcxx,kanas3gnfc,SM-G355H,SM-G355HN,SM-G355M
 
 # SELinux
-BOARD_SEPOLICY_DIRS += device/samsung/kanas/sepolicy
+# Dissable SELinux(uncomment the line below include on :)
+#BOARD_SEPOLICY_DIRS += device/samsung/kanas/sepolicy
 
 # Use dmalloc() for low memory device
 MALLOC_IMPL := dlmalloc
+# new-function
 BOARD_USES_LEGACY_MMAP := true
 
 # Enable dex-preoptimization to speed up the first boot sequence
-#WITH_DEXPREOPT := true
-#WITH_DEXPREOPT_PIC := true
+WITH_DEXPREOPT := false
+WITH_DEXPREOPT_PIC := true
 
 # Recovery
 BOARD_HAS_DOWNLOAD_MODE := true
