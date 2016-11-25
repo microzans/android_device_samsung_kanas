@@ -1,4 +1,3 @@
-	
 <html>
 <head>
 <title></title>
@@ -6,6 +5,8 @@
 <body>
 <h1 style="text-align: center;">
 Samsung Galaxy Core 2</h1>
+<p style="text-align: center;">
+<img alt="core 2 photo(not loading)((((" src="http://forum.xda-developers.com/images/custom/enhanced_tags/samsunggalaxycore2.jpg.pagespeed.ce.QuGfPwGe3F.jpg" style="width: 320px; height: 330px;" /></p>
 <ul>
 <li>
 Vendor ( Samsung)</li>
